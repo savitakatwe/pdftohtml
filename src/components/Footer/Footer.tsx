@@ -17,35 +17,33 @@ const StyledHeaderItems = styled.div`
   gap: 10px;
   align-items: center;
 `;
-const StyledShadow = styled.div`
-  position: absolute;
-  height: 100%;
+const StyledDiv = styled.div`
+  background-color: #404e6a;
   width: 100%;
-  color: #404e6a;
-  z-index: 1;
 `;
 
 const Footer = () => {
   return (
-    <StyledHeader>
-      <StyledHeaderItems>
-        <StyledLogo src={logo} alt={logo} />
+    <StyledDiv>
+      <StyledHeader>
+        <StyledHeaderItems>
+          <StyledLogo src={logo} alt={logo} />
 
-        <Typography variant={"body"} color={"black"} fontWeight={"300"}>
-          LOSANGELES
-          <Typography variant={"body"} color={"black"} fontWeight={"300"}>
-            MOUNTAINS
+          <Typography variant={"body"} color={"lightgrey"} fontWeight={"300"}>
+            LOSANGELES
+            <Typography variant={"body"} color={"lightgrey"} fontWeight={"300"}>
+              MOUNTAINS
+            </Typography>
           </Typography>
-        </Typography>
-      </StyledHeaderItems>
+        </StyledHeaderItems>
 
-      <StyledHeaderItems>
-        <Typography variant={"small"} color={"black"} fontWeight={"300"}>
-          COPYRIGHT 2014.ALL RIGHTS RESERVED
-        </Typography>
-      </StyledHeaderItems>
-      <StyledShadow></StyledShadow>
-    </StyledHeader>
+        <StyledHeaderItems>
+          <Typography variant={"small"} color={"lightgrey"} fontWeight={"300"}>
+            COPYRIGHT 2014.ALL RIGHTS RESERVED
+          </Typography>
+        </StyledHeaderItems>
+      </StyledHeader>
+    </StyledDiv>
   );
 };
 
