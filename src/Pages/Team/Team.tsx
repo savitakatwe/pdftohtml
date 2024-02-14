@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import page3 from "../../../public/page3.png";
 import Header from "../../components/Header/Header";
+import TeamHeader from "../../components/TeamHeader/TeamHeader";
 
 const StyledContainer = styled.div`
   background: url("./page3.png");
@@ -19,6 +20,7 @@ const Home = () => {
   return (
     <>
       <Header />
+      <TeamHeader />
       <StyledContainer>
         <StyledContainer1></StyledContainer1>
       </StyledContainer>

@@ -26,21 +26,40 @@ const StyledContainer = styled.div`
 `;
 
 const Home = () => {
+  console.log(window.innerWidth);
   return (
     <>
       <Header />
       <StyledContainer>
         <StyledContainer1>
-          <Typography variant={"headLine"} color={"#4d4d4d"}>
-            LOSANGELES
-          </Typography>
-          <Typography
-            variant={"headLine"}
-            color={"#404e6a"}
-            lineHeight={"40px"}
-          >
-            MOUNTAINS
-          </Typography>
+          {window.innerWidth < 370 ? (
+            <>
+              <Typography variant={"head"} color={"#4d4d4d"}>
+                LOSANGELES
+              </Typography>
+              <Typography
+                variant={"head"}
+                color={"#404e6a"}
+                lineHeight={"40px"}
+              >
+                MOUNTAINS
+              </Typography>{" "}
+            </>
+          ) : (
+            <>
+              {" "}
+              <Typography variant={"headLine"} color={"#4d4d4d"}>
+                LOSANGELES
+              </Typography>
+              <Typography
+                variant={"headLine"}
+                color={"#404e6a"}
+                lineHeight={"40px"}
+              >
+                MOUNTAINS
+              </Typography>
+            </>
+          )}
         </StyledContainer1>
       </StyledContainer>
     </>
