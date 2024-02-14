@@ -32,24 +32,28 @@ const Header = () => {
       </StyledHeaderItems>
 
       <StyledHeaderItems>
-        <Typography
-          variant={"small"}
-          color={"black"}
-          fontWeight={"300"}
-          textDecoration={"underline"}
-          fontStyle={"italic"}
-        >
-          01.HISTORY
-        </Typography>
-        <Typography
-          variant={"small"}
-          color={"black"}
-          fontWeight={"300"}
-          textDecoration={"underline"}
-          fontStyle={"italic"}
-        >
-          02.TEAM
-        </Typography>
+        <a href={"#history"}>
+          <Typography
+            variant={"small"}
+            color={"black"}
+            fontWeight={"300"}
+            textDecoration={"underline"}
+            fontStyle={"italic"}
+          >
+            01.HISTORY
+          </Typography>
+        </a>
+        <a href={"#team"}>
+          <Typography
+            variant={"small"}
+            color={"black"}
+            fontWeight={"300"}
+            textDecoration={"underline"}
+            fontStyle={"italic"}
+          >
+            02.TEAM
+          </Typography>
+        </a>
       </StyledHeaderItems>
     </StyledHeader>
   );

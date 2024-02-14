@@ -11,12 +11,15 @@ const StyledContainer = styled.div`
   height: 100vh;
   background-size: cover;
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
 const StyledContainer1 = styled.div`
   width: 700px;
   max-width: 100%;
-  margin: auto;
+  margin: 0 auto;
 `;
 
 const StyledLayer01 = styled.div`
@@ -30,30 +33,32 @@ const StyledHistoryText = styled.div`
   //top: 1002px;
   //left: 469px;
 `;
-const Home = () => {
+const History = () => {
   return (
     <>
-      <Header />
-      <StyledContainer>
-        <StyledContainer1>
-          <StyledHistoryText>
-            <img src={historyText} alt="historyText" />
-          </StyledHistoryText>
-          <StyledLayer01>
-            <img src={layer01} alt="layer01" />
-          </StyledLayer01>
-          <Typography variant={"small"} color={"black"} fontWeight={"400"}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in
-            ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus
-            est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam.
-            Cras scelerisque id quam sed dignissim Pellentesque urna nunc,
-            gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit
-            dignissim tortor nec congue.{" "}
-          </Typography>
-        </StyledContainer1>
-        <CarouselBox />
-      </StyledContainer>
+      <div id={"history"}>
+        <Header />
+        <StyledContainer>
+          <StyledContainer1>
+            <StyledHistoryText>
+              <img src={historyText} alt="historyText" />
+            </StyledHistoryText>
+            <StyledLayer01>
+              <img src={layer01} alt="layer01" />
+            </StyledLayer01>
+            <Typography variant={"small"} color={"black"} fontWeight={"400"}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in
+              ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus
+              est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt
+              quam. Cras scelerisque id quam sed dignissim Pellentesque urna
+              nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus
+              suscipit dignissim tortor nec congue.{" "}
+            </Typography>
+          </StyledContainer1>
+          <CarouselBox />
+        </StyledContainer>
+      </div>
     </>
   );
 };
-export default Home;
+export default History;

@@ -22,13 +22,15 @@ const StyledContainer1 = styled.div`
 const Home = () => {
   return (
     <>
-      <Header />
-      <TeamHeader />
-      <MountainNav />
-      <StyledContainer>
-        <ScheduleBox />
-        <StyledContainer1></StyledContainer1>
-      </StyledContainer>
+      <div id={"team"}>
+        <Header />
+        <TeamHeader />
+        <MountainNav />
+        <StyledContainer>
+          <ScheduleBox />
+          <StyledContainer1></StyledContainer1>
+        </StyledContainer>
+      </div>
     </>
   );
 };
