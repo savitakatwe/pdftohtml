@@ -8,11 +8,15 @@ const StyledTypography = styled.p<{
   color: string;
   fontWeight?: string;
   lineHeight?: string;
+  textDecoration?: string;
+  fontStyle?: string;
 }>`
   font-size: ${(props) => props.size};
   color: ${(props) => props.color};
   font-weight: ${(props) => props.fontWeight || 700};
   line-height: ${(props) => props.lineHeight};
+  text-decoration: ${(props) => props.textDecoration};
+  font-style: ${(props) => props.fontStyle};
 `;
 interface ITypographyProps extends ParamHTMLAttributes<HTMLParagraphElement> {
   variant:
@@ -27,6 +31,8 @@ interface ITypographyProps extends ParamHTMLAttributes<HTMLParagraphElement> {
   as?: string;
   fontWeight?: string;
   lineHeight?: string;
+  textDecoration?: string;
+  fontStyle?: string;
 }
 const Typography = ({
   variant,
@@ -34,6 +40,8 @@ const Typography = ({
   color,
   fontWeight,
   lineHeight,
+  textDecoration,
+  fontStyle,
   as,
   ...otherProps
 }: PropsWithChildren<ITypographyProps>) => {
@@ -63,6 +71,8 @@ const Typography = ({
       color={color}
       fontWeight={fontWeight}
       lineHeight={lineHeight}
+      textDecoration={textDecoration}
+      fontStyle={fontStyle}
       {...otherProps}
     >
       {children}

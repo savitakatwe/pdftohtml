@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./Pages/Home/Home";
 import History from "./Pages/History/History";
 import Team from "./Pages/Team/Team";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Home />
       <History />
       <Team />
+      <Footer />
     </div>
   );
 }

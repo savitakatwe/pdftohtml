@@ -2,6 +2,7 @@ import styled from "styled-components";
 import page3 from "../../../public/page3.png";
 import Header from "../../components/Header/Header";
 import TeamHeader from "../../components/TeamHeader/TeamHeader";
+import MountainNav from "../../components/MountainNav/MountainNav";
 
 const StyledContainer = styled.div`
   background: url("./page3.png");
@@ -21,6 +22,7 @@ const Home = () => {
     <>
       <Header />
       <TeamHeader />
+      <MountainNav />
       <StyledContainer>
         <StyledContainer1></StyledContainer1>
       </StyledContainer>
