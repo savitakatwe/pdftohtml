@@ -7,10 +7,12 @@ const StyledTypography = styled.p<{
   size: string;
   color: string;
   fontWeight?: string;
+  lineHeight?: string;
 }>`
   font-size: ${(props) => props.size};
   color: ${(props) => props.color};
   font-weight: ${(props) => props.fontWeight || 700};
+  line-height: ${(props) => props.lineHeight};
 `;
 interface ITypographyProps extends ParamHTMLAttributes<HTMLParagraphElement> {
   variant:
@@ -24,19 +26,21 @@ interface ITypographyProps extends ParamHTMLAttributes<HTMLParagraphElement> {
   color: string;
   as?: string;
   fontWeight?: string;
+  lineHeight?: string;
 }
 const Typography = ({
   variant,
   children,
   color,
   fontWeight,
+  lineHeight,
   as,
   ...otherProps
 }: PropsWithChildren<ITypographyProps>) => {
   const typo = useMemo(() => {
     switch (variant) {
       case "headLine":
-        return { size: "50px" };
+        return { size: "100px" };
       case "head":
         return { size: "40px" };
       case "title1":
@@ -58,6 +62,7 @@ const Typography = ({
       size={typo.size}
       color={color}
       fontWeight={fontWeight}
+      lineHeight={lineHeight}
       {...otherProps}
     >
       {children}

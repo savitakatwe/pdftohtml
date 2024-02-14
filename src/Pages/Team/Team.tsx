@@ -1,24 +1,27 @@
 import styled from "styled-components";
-import page3 from "../../assets/page3.png";
+import page3 from "../../../public/page3.png";
+import Header from "../../components/Header/Header";
 
-const StyledImage = styled.img`
-  max-height: 100vh;
-  position: relative;
-  width: 99.9%;
-  //height: 100%;
-  object-fit: cover;
+const StyledContainer = styled.div`
+  background: url("./page3.png");
+  height: 100vh;
+  background-size: cover;
+  padding: 30px;
 `;
-const StyledText = styled.span`
-  position: absolute;
-  color: black;
+
+const StyledContainer1 = styled.div`
+  width: 700px;
+  max-width: 100%;
+  margin: auto;
 `;
 
 const Home = () => {
   return (
     <>
-      <div>
-        <StyledImage src={page3} alt="page" />
-      </div>
+      <Header />
+      <StyledContainer>
+        <StyledContainer1></StyledContainer1>
+      </StyledContainer>
     </>
   );
 };
