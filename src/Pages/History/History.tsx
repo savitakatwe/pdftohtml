@@ -3,6 +3,8 @@ import layer01 from "../../assets/layer_01.png";
 import historyText from "../../assets/HISTORY.png";
 import Typography from "../../components/Typography/Typography";
 import Header from "../../components/Header/Header";
+import CarouselBox from "../../components/CarouselBox/CarouselBox";
+import React from "react";
 
 const StyledContainer = styled.div`
   background: url("./page2.png");
@@ -49,6 +51,7 @@ const Home = () => {
             dignissim tortor nec congue.{" "}
           </Typography>
         </StyledContainer1>
+        <CarouselBox />
       </StyledContainer>
     </>
   );
