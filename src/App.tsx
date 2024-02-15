@@ -5,7 +5,6 @@ import Home from "./Pages/Home/Home";
 import History from "./Pages/History/History";
 import Team from "./Pages/Team/Team";
 import Footer from "./components/Footer/Footer";
-import CarouselBox from "./components/CarouselBox/CarouselBox";
 
 function App() {
   return (

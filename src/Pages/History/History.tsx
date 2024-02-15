@@ -22,17 +22,6 @@ const StyledContainer1 = styled.div`
   margin: 0 auto;
 `;
 
-const StyledLayer01 = styled.div`
-  //position: absolute;
-  //width: 750px;
-  //top: 935px;
-  //left: 348px;
-`;
-const StyledHistoryText = styled.div`
-  //position: absolute;
-  //top: 1002px;
-  //left: 469px;
-`;
 const History = () => {
   return (
     <>
@@ -40,12 +29,12 @@ const History = () => {
         <Header />
         <StyledContainer>
           <StyledContainer1>
-            <StyledHistoryText>
+            <div>
               <img src={historyText} alt="historyText" />
-            </StyledHistoryText>
-            <StyledLayer01>
+            </div>
+            <div>
               <img src={layer01} alt="layer01" />
-            </StyledLayer01>
+            </div>
             <Typography variant={"small"} color={"black"} fontWeight={"400"}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in
               ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus

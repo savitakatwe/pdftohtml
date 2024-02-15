@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import page3 from "../../../public/page3.png";
 import Header from "../../components/Header/Header";
 import TeamHeader from "../../components/TeamHeader/TeamHeader";
 import MountainNav from "../../components/MountainNav/MountainNav";
